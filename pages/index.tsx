@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import styles from "./index.module.css";
-// コメント削除コミットテスト
+
 const IndexPage: NextPage = () => {
   const [imageUrl, setImageUrl] = useState("");
   const [loading, setLoading] = useState(true);
@@ -21,7 +21,7 @@ const IndexPage: NextPage = () => {
   return (
     <div className={styles.page}>
       <button onClick={handleClick} className={styles.button}>
-        他のにゃんこも見る
+        One more cat!
       </button>
       <div className={styles.frame}>
         {loading || <img src={imageUrl} className={styles.img} />}
